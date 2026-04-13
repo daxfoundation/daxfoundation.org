@@ -1,0 +1,123 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'DAX Foundation — Open-source tools for equitable education',
+  ignoreTitleTemplate: true,
+};
+
+const heroActions = [
+  {
+    variant: 'primary',
+    text: 'GitHub',
+    href: 'https://github.com/daxfoundation',
+    target: '_blank',
+    icon: 'tabler:brand-github',
+  },
+  { text: 'Learn more', href: '#about' },
+];
+
+const heroImage = { src: '~/assets/images/hero-image.png', alt: 'DAX Foundation' };
+
+const features = [
+  {
+    title: 'EdDAX',
+    description: 'Dynamic pedagogical tools that help people learn better. Designed around learning science — not guesswork.',
+    icon: 'tabler:books',
+  },
+  {
+    title: 'NovaDax',
+    description: 'Forkable templates and architectures for knowledge systems. Knowledge architecture as a commons.',
+    icon: 'tabler:package',
+  },
+  {
+    title: 'SkippyDAX',
+    description: 'Open-source cognitive companion framework. Free forever. Work WITH AI, not just FOR it.',
+    icon: 'tabler:brain',
+  },
+];
+
+const contentItems = [
+  {
+    title: 'Knowledge should not be a luxury',
+    description: 'Access to quality learning tools shapes opportunity. We believe the best tools should be available to everyone.',
+  },
+  {
+    title: 'Learning science, not platforms',
+    description: 'Our tools are grounded in how humans actually learn — not what captures attention.',
+  },
+  {
+    title: 'Sovereign knowledge systems',
+    description: 'You own your learning, your data, your context. No platform lock-in. No algorithmic ranking of what you should think.',
+  },
+];
+
+const ctaActions = [
+  {
+    variant: 'primary',
+    text: 'Explore on GitHub',
+    href: 'https://github.com/daxfoundation',
+    target: '_blank',
+    icon: 'tabler:brand-github',
+  },
+  {
+    variant: 'secondary',
+    text: 'Open Collective',
+    href: 'https://opencollective.com/daxfoundation',
+    target: '_blank',
+    icon: 'tabler:heart',
+  },
+];
+---
+
+<Layout metadata={metadata}>
+  <Hero actions={heroActions} image={heroImage}>
+    <Fragment slot="title">
+      Open-source tools for <span class="text-accent dark:text-white">equitable education</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">DAX Foundation</span> builds freely available tools that raise the knowledge floor across every domain.</span
+      >
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">DAX: Knowledge for everyone.</span>
+      We believe equitable access to education is a prerequisite for human flourishing.
+    </Fragment>
+  </Hero>
+
+  <Note title="Our Mission:" description="Raising the knowledge floor through equitable education and accessible tools for learning and discovery" />
+
+  <Features
+    id="about"
+    tagline="Our Work"
+    title="Three interlinked initiatives"
+    subtitle="Each feeds the others. Together, they compound toward equitable access to education and knowledge sovereignty."
+    items={features}
+  />
+
+  <Content isReversed tagline="Why This Matters" title="Education equity is the foundation" items={contentItems}>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building the conditions for emergence</h3>
+      Constraints don't limit learning — they enable it. We design our tools with this principle at the core.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <CallToAction actions={ctaActions}>
+    <Fragment slot="title">
+      Join us in building <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">education tools that serve humanity</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      All our work is open source. All our code is free. Help us raise the knowledge floor.
+    </Fragment>
+  </CallToAction>
+</Layout>
