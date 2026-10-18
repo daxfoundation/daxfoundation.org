@@ -1,29 +1,16 @@
-# DAX Foundation Website
+# daxfoundation.org
 
-Open-source tools for equitable education and sovereign knowledge systems.
+The DAX Foundation's site is live at **https://daxfoundation.org/**.
 
-Built with [Astro](https://astro.build) + [Tailwind CSS](https://tailwindcss.com)
+This repository holds the April 2026 version of the site and is kept for the record. It is not where the site is built any more.
 
-## Quick Start
+Where things are now:
 
-```bash
-npm install
-npm run dev     # Start dev server
-npm run build   # Build for production
-npm run preview # Preview production build
-```
+- **The site:** https://daxfoundation.org/ · [Meta DAX](https://daxfoundation.org/metadax/) · [the library of showcases, kits and samples](https://daxfoundation.org/metadax/showcases/) · [Writing](https://daxfoundation.org/writing/) · [The Constraint Protocol](https://daxfoundation.org/constraint-protocol/) · [Definitions](https://daxfoundation.org/definitions/)
+- **The recipe** (the open prompts, templates and tools that build a learning package for one guide and one learner): https://github.com/daxfoundation/metadax
+- **The Constraint Protocol** (public working draft, v0.5): https://github.com/daxfoundation/constraint-protocol
+- **The public record** of what is published, and how: https://github.com/ObsidianDelta/published
 
-## Community
+DAX is the preservation and expansion of life, humanity, and consciousness. Meta DAX is free and built on paid compute; if you want to support it: [Ko-fi](https://ko-fi.com/jeyanandan) · [GitHub Sponsors](https://github.com/sponsors/ObsidianDelta).
 
-- GitHub: https://github.com/daxfoundation
-- Open Collective: https://opencollective.com/daxfoundation
-
-## Initiatives
-
-- **EdDAX**: Dynamic pedagogical tools for learning
-- **NovaDax**: Forkable knowledge system templates  
-- **SkippyDAX**: Open-source cognitive companion framework
-
-## License
-
-Open source. All code is free.
+Questions: [Jason Jeyanandan on LinkedIn](https://www.linkedin.com/in/jasonjeyanandan), or an issue on the [metadax](https://github.com/daxfoundation/metadax/issues) repository.
